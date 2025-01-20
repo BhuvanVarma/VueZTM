@@ -8,7 +8,13 @@
 
 <body>
   <div id="app" v-cloak>
-    {{ fullName() }}
+    <p>{{ fullName() }}</p>
+    <a :href="URL" target="_blank" rel="noopener noreferrer">Google</a>
+    <hr>
+    <label for="">First Name</label>
+    <input type="text" v-model="firstName">
+    <label for="">Last Name</label>
+    <input type="text" v-model="lastName">
   </div>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
